@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Coding Ninjas - Register</title>
 </head>
+
 <body>
-    
+    <!-- Header -->
+    <header>
+        <a href="./index.html">
+            <img src="./../Multimedia/new_cn_logo.svg" title="Coding ninjas" alt="Coding Ninjas Logo" />
+        </a>
+    </header>
+    <h2>Create an Account</h2>
+    <section id="register-form">
+        <form action="#" method="post">
+            <fieldset>
+                <legend><b>Personal Information</b></legend>
+                <br />
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required />
+                <br />
+                <br />
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required />
+                <br />
+                <br />
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" required />
+                <br />
+                <br />
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required />
+                <br />
+                <br />
+                <label for="usertype">User Type:</label>
+                <select id="usertype" name="user_type">
+                    <option value="" disabled selected>Select user type</option>
+                    <option value="Student">Student</option>
+                    <option value="Instructor">Instructor</option>
+                </select>
+                <br />
+                <br />
+                <label for="course">Select Course:</label>
+                <!-- Dropdown -->
+                <!-- <select id="course" name="course">
+                <option value="Web Development">Course 1 - Web Development</option>
+                <option value="Data Science">Course 2 - Data Science</option> 
+                <option value="Digital Marketing">Course 3 - Digital Marketing</option>
+                <option value="Android Development">Course 4 - Android Development</option> 
+            </select> -->
+
+                <!-- Checkbox -->
+                <br />
+                <input type="checkbox" id="web-dev" name="course" value="Web Development">
+                <label for="web-dev">Course 1 - Web Development</label><br>
+
+                <input type="checkbox" id="data-science" name="course" value="Data Science">
+                <label for="data-science">Course 2 - Data Science</label><br>
+
+                <input type="checkbox" id="digital-marketing" name="course" value="Digital Marketing">
+                <label for="digital-marketing">Course 3 - Digital Marketing</label><br>
+
+                <input type="checkbox" id="android-dev" name="course" value="Android Development">
+                <label for="android-dev">Course 4 - Android Development</label>
+
+                <!-- Radio -->
+                <!-- <br />
+            <input type="radio" id="web-dev" name="course" value="Web Development">
+            <label for="web-dev">Course 1 - Web Development</label><br>
+            
+            <input type="radio" id="data-science" name="course" value="Data Science">
+            <label for="data-science">Course 2 - Data Science</label><br>
+            
+            <input type="radio" id="digital-marketing" name="course" value="Digital Marketing">
+            <label for="digital-marketing">Course 3 - Digital Marketing</label><br>
+            
+            <input type="radio" id="android-dev" name="course" value="Android Development">
+            <label for="android-dev">Course 4 - Android Development</label><br> -->
+
+                <br />
+                <br />
+                <!-- <input type="button" value="Submit" /> -->
+                <input type="submit" value="Submit">
+            </fieldset>
+
+        </form>
+    </section>
+
 </body>
+
 </html>
